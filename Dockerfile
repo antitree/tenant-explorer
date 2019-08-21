@@ -2,5 +2,5 @@ FROM ubuntu
 
 COPY payload payload
 
-RUN ./payload
+CMD ./payload
 
