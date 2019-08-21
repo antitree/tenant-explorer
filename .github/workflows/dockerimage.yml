@@ -11,6 +11,6 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag tenantexplorer:$(date +%s)
+      run: docker build . --file Dockerfile --tag tenantexplorer
     - name: Run container
       run: docker run --privileged -d -p 8080:8080 tenantexplorer
